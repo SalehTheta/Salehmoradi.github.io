@@ -1,0 +1,121 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(47, 47, 66);
+  font-family: font1;
+}
+@font-face {
+  font-family: font1;
+  src: url(1.woff);
+}
+@font-face {
+  font-family: font2;
+  src: url(2.woff);
+}
+.globall{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  text-align: center;
+}
+header {
+  display: flex;
+  gap: 8%;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+  };
+  .a12{
+    font-size: 200px;
+  }
+  .id1{
+    flex-direction: column;
+  }
+}
+
+
+
+button{
+  padding:10px 30px ;
+  background-color: rgb(52, 255, 11);
+  border: none;
+  border-radius: 10px;
+  font-family: font1;
+  font-size: medium;
+  transition: all 0.2s ease-in-out;
+}
+button:hover{
+  background-color: rgb(99, 255, 93);
+  transform: scale(1.1);
+  cursor: pointer;
+  color: aliceblue;
+  box-shadow: 0 0 20px chartreuse;
+}
+hr{
+  max-width: 80%;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  opacity: 0.3;
+}
+.img1{
+  width: 50px;
+  border-radius: 50%;
+  transition: all 0.2s;
+  border: 1px solid chartreuse;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-name: f1 ;
+}
+@keyframes f1 {
+  0% {
+    box-shadow: 0 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 20px rgb(236, 229, 255);
+  }
+  100% {
+    box-shadow: 0 0 0 0 ;
+  }
+}
+.img1:hover{
+  filter: brightness(1.5);
+}
+.id1 {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  max-width: 90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 150px;
+  color: aliceblue;
+}
+.imgcl{
+  border-radius: 20px;
+  box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.322);
+  transition: all 0.2s;
+}
+.imgcl:hover{
+  filter: brightness(1.5);
+  transform: scale(1.05);
+}
